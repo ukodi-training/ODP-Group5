@@ -102,7 +102,7 @@ var country = svg.selectAll(".country").data(countries);
       	$('#info').html("<h2>" 
       	+ d.name 
       	+ "</h2>Population: <span class='population'> " 
-      	+ d.value.toString().replace(/\B(?=(\d(3)+(?!\d))/g, "," ) 
+      	+ d.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "," ) 
       	+ "</span>");
       })
       .on("click", function(d,i) {
